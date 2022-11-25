@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+    /* Coolors */
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+    /* Font */
+    --fSize: 16px;
+    --fFamily: "Red Hat Display", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fFamily);
+}
+body {
+    height: 100vh;
+    background-color: var(--paleBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-summary {
+    background-color: white;
+    width: 360px;
+    border-radius: 10px;
+}
+.card-summary > img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-summary .card-description {
+    padding: 15px 35px;
+}
+.card-summary .card-description h1,
+.card-summary .card-description p {
+    text-align: center;
+}
+.card-summary .card-description h1 {
+    font-weight: 900;
+    font-size: 25px;
+}
+.card-summary .card-description > p {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--desaturatedBlue);
+}
+.card-summary .card-description .plan-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--veryPaleBlue);
+    border-radius: 7px;
+    padding: 15px 20px;
+    margin: 15px 0 25px;
+}
+
+.content-detail {
+    display: flex;
+    flex-direction: row;
+}
+.card-summary .card-description .plan-detail .text-detail {
+    padding: 0 12px;
+}
+
+.card-summary .card-description .plan-detail .text-detail h2 {
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.card-summary .card-description .plan-detail .text-detail p {
+    text-align: start;
+    font-size: 14px;
+    padding: 3px 0;
+    color: var(--desaturatedBlue);
+}
+
+.card-summary .card-description .plan-detail a {
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--brightBlue);
+}
+
+.card-summary .card-description .buttons {
+    display: flex;
+    flex-direction: column;
+}
+.card-summary .card-description .buttons button {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 900;
+}
+.card-summary .card-description .buttons button:first-child {
+    background: var(--brightBlue);
+    color: white;
+}
+.card-summary .card-description .buttons button:last-child {
+    background: none;
+    color: var(--desaturatedBlue);
+}
+
+.card-summary .card-description .buttons button:hover {
+    cursor: pointer;
+}
